@@ -46,3 +46,15 @@ _November 18, 2026_<br>
   ```
   Component Tree
   ```
+- AlbumDetailPage.jsx
+  ```
+  Component Tree
+  ```
+- CatalogPage.jsx
+  ```
+  Component Tree
+  ```
+- CheckoutPage.jsx
+  ```
+  Component Tree
+  ```
