@@ -30,6 +30,10 @@ _November 18, 2026_<br>
 
 ### **_2. React Component Hierarchy & State Flow Architecture_**
 
+- App.jsx
+  ```
+  Component Tree
+  ```
 - Navbar.jsx
   ```
   Component Tree
