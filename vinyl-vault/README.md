@@ -1,19 +1,44 @@
-# React + Vite
+_Sumaya Uddin_<br>
+_Professor Amartya Sen_<br>
+_CSI 3150 - Web and Mobile Systems_<br>
+_November 18, 2026_<br>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Assignment 3A - VinylVault
 
-Currently, two official plugins are available:
+#### <u>User Stories (for reference)</u>:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Story 1 (Genre Filtering & Grid Browsing)**: As a vinyl enthusiast, I want to `filter albums by genre ("All", "Jazz", "Electronic", "Rock", "Classical") so that I can browse releases within my preferred genre`.
 
-## React Compiler
+- **Story 2 (Album Detail View Routin)**: As a collector, I want to `click an album card to navigate to its dedicated detail view (URL: /album/:albumId) to inspect additional details like pressing weight, catalog number, speed, and stock status`.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Story 3 (Stateful Slide-Over Cart)**: As a shopper, I want to `add albums to my cart from catalog or detail views, and inside the cart, I should be able to update quantities (increase or decrease), delete items, and see calculated totals in an interactive cart drawer without page reloads`.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+- **Story 4 (Header Cart Badge Sync)**: As a user browsing across different routes, I want `the sticky header to display an updated badge showing total item count in my cart`.
 
-## Expanding the ESLint configuration
+- **Story 5 (Checkout Validation & Funnel)**: As a customer completing an order, I want to `review my itemized order on a dedicated checkout route (/checkout), submit shipping details via a controlled web form, and receive an instant confirmation that resets the active cart`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### **_1. Project Setup & Execution Instructions_**
+
+- **Prerequisites:**
+- **Installation Procedure:**
+- **Server Boot Script:**
+- **Project Directory Structure:** ONLY 3-4 SENTENCES
+
+---
+
+### **_2. React Component Hierarchy & State Flow Architecture_**
+
+- Navbar.jsx
+  ```
+  Component Tree
+  ```
+- CartDrawer.jsx
+  ```
+  Component Tree
+  ```
+- AlbumCard.jsx
+  ```
+  Component Tree
+  ```
