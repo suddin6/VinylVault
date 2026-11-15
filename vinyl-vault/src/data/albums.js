@@ -7,67 +7,67 @@ export const ALBUMS = [
     genre: "Jazz",
     price: 38.99,
     stock: 9,
-    image: "https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&auto=format&fit=crop&q=60",
-    description: "Peak modal jazz recorded in two sessions in 1959. Mastered from original analog tapes on heavy virgin vinyl.",
+    image:
+      "https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&auto=format&fit=crop&q=60",
+    description:
+      "Peak modal jazz recorded in two sessions in 1959. Mastered from original analog tapes on heavy virgin vinyl.",
     specs: {
       catalogNumber: "CS-8163",
       weight: "180g",
       speed: "33 1/3 RPM",
-      label: "Columbia"
+      label: "Columbia",
     },
     tracklist: [
       "So What",
       "Freddie Freeloader",
       "Blue in Green",
       "All Blues",
-      "Flamenco Sketches"
-    ]
+      "Flamenco Sketches",
+    ],
   },
   {
     id: "alb-02",
     title: "Selected Ambient Works 85-92",
     artist: "Aphex Twin",
     genre: "Electronic",
-    price: 44.50,
+    price: 44.5,
     stock: 5,
-    image: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=600&auto=format&fit=crop&q=60",
-    description: "Seminal ambient techno masterwork featuring layered analog synthesizers and breakbeat rhythms on gatefold 2xLP.",
+    image:
+      "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=600&auto=format&fit=crop&q=60",
+    description:
+      "Seminal ambient techno masterwork featuring layered analog synthesizers and breakbeat rhythms on gatefold 2xLP.",
     specs: {
       catalogNumber: "AMB-3922",
       weight: "140g",
       speed: "33 1/3 RPM",
-      label: "Apollo"
+      label: "Apollo",
     },
-    tracklist: [
-      "Xtal",
-      "Tha",
-      "Pulsewidth",
-      "Ageispolis",
-      "Green Calx"
-    ]
+    tracklist: ["Xtal", "Tha", "Pulsewidth", "Ageispolis", "Green Calx"],
   },
   {
     id: "alb-03",
     title: "Abbey Road (Anniversary Edition)",
     artist: "The Beatles",
     genre: "Rock",
-    price: 36.00,
+    price: 36.0,
     stock: 14,
-    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=60",
-    description: "Stereo mix produced by Giles Martin directly from original eight-track session tapes.",
+    image:
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=60",
+    description:
+      "Stereo mix produced by Giles Martin directly from original eight-track session tapes.",
     specs: {
       catalogNumber: "PCS-7088",
       weight: "180g",
       speed: "33 1/3 RPM",
-      label: "Apple Records"
+      label: "Apple Records",
     },
     tracklist: [
       "Come Together",
       "Something",
       "Octopus's Garden",
       "Here Comes the Sun",
-      "The End"
-    ]
+      "The End",
+    ],
   },
   {
     id: "alb-04",
@@ -76,66 +76,67 @@ export const ALBUMS = [
     genre: "Classical",
     price: 31.25,
     stock: 4,
-    image: "https://images.unsplash.com/photo-1520523839898-507125cd53c1?w=600&auto=format&fit=crop&q=60",
-    description: "The landmark 1981 digital recording documenting Gould's contemplative return to Bach's variations.",
+    image:
+      "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=50&w=600&auto=format&fit=crop&60",
+    description:
+      "The landmark 1981 digital recording documenting Gould's contemplative return to Bach's variations.",
     specs: {
       catalogNumber: "IM-37779",
       weight: "150g",
       speed: "33 1/3 RPM",
-      label: "CBS Masterworks"
+      label: "CBS Masterworks",
     },
     tracklist: [
       "Aria",
       "Variatio 1 a 1 Clav.",
       "Variatio 2 a 1 Clav.",
       "Variatio 3 Canone all'Unisono",
-      "Aria da Capo"
-    ]
+      "Aria da Capo",
+    ],
   },
   {
     id: "alb-05",
     title: "Head Hunters",
     artist: "Herbie Hancock",
     genre: "Jazz",
-    price: 34.00,
+    price: 34.0,
     stock: 8,
-    image: "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=600&auto=format&fit=crop&q=60",
-    description: "Pioneering jazz-funk fusion powered by ARP synthesizers, clavinet grooves, and Paul Jackson's basslines.",
+    image:
+      "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=600&auto=format&fit=crop&q=60",
+    description:
+      "Pioneering jazz-funk fusion powered by ARP synthesizers, clavinet grooves, and Paul Jackson's basslines.",
     specs: {
       catalogNumber: "KC-32731",
       weight: "180g",
       speed: "33 1/3 RPM",
-      label: "Columbia"
+      label: "Columbia",
     },
-    tracklist: [
-      "Chameleon",
-      "Watermelon Man",
-      "Sly",
-      "Vein Melter"
-    ]
+    tracklist: ["Chameleon", "Watermelon Man", "Sly", "Vein Melter"],
   },
   {
     id: "alb-06",
     title: "Music Has the Right to Children",
     artist: "Boards of Canada",
     genre: "Electronic",
-    price: 42.00,
+    price: 42.0,
     stock: 6,
-    image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600&auto=format&fit=crop&q=60",
-    description: "Warm, nostalgic downtempo electronica built with degraded tape samples, vintage synth patches, and field recordings.",
+    image:
+      "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=600&auto=format&fit=crop&q=60",
+    description:
+      "Warm, nostalgic downtempo electronica built with degraded tape samples, vintage synth patches, and field recordings.",
     specs: {
       catalogNumber: "WARP-LP55",
       weight: "140g",
       speed: "33 1/3 RPM",
-      label: "Warp"
+      label: "Warp",
     },
     tracklist: [
       "Wildlife Analysis",
       "An Eagle in Your Mind",
       "Telephasic Workshop",
       "Roygbiv",
-      "Rue the Whirl"
-    ]
+      "Rue the Whirl",
+    ],
   },
   {
     id: "alb-07",
@@ -144,42 +145,46 @@ export const ALBUMS = [
     genre: "Rock",
     price: 29.99,
     stock: 16,
-    image: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=600&auto=format&fit=crop&q=60",
-    description: "1977 pop-rock classic pressed on high-grade vinyl with gatefold packaging and lyric insert.",
+    image:
+      "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=600&auto=format&fit=crop&q=60",
+    description:
+      "1977 pop-rock classic pressed on high-grade vinyl with gatefold packaging and lyric insert.",
     specs: {
       catalogNumber: "BSK-3010",
       weight: "140g",
       speed: "33 1/3 RPM",
-      label: "Warner Records"
+      label: "Warner Records",
     },
     tracklist: [
       "Second Hand News",
       "Dreams",
       "Never Going Back Again",
       "Don't Stop",
-      "Go Your Own Way"
-    ]
+      "Go Your Own Way",
+    ],
   },
   {
     id: "alb-08",
     title: "Max Richter: Sleep (Excerpts)",
     artist: "Max Richter",
     genre: "Classical",
-    price: 49.00,
+    price: 49.0,
     stock: 3,
-    image: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=600&auto=format&fit=crop&q=60",
-    description: "Curated 2xLP selections from Richter's 8-hour composition scored for piano, string quintet, soprano, and modular electronics.",
+    image:
+      "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=600&auto=format&fit=crop&q=60",
+    description:
+      "Curated 2xLP selections from Richter's 8-hour composition scored for piano, string quintet, soprano, and modular electronics.",
     specs: {
       catalogNumber: "DG-479-5257",
       weight: "180g",
       speed: "33 1/3 RPM",
-      label: "Deutsche Grammophon"
+      label: "Deutsche Grammophon",
     },
     tracklist: [
       "Dream 1 (before the wind blows it all away)",
       "Path 5 (delta)",
       "Dream 3 (in the midst of my life)",
-      "Path 19 (yet frailest)"
-    ]
-  }
+      "Path 19 (yet frailest)",
+    ],
+  },
 ];

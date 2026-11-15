@@ -24,7 +24,6 @@ const AlbumDetailPage = ({ albums, onAddToCart }) => {
       </nav>
 
       <div className="detail-grid">
-        <div className="album-genre">{album.genre}</div>
         <img src={album.image} alt={album.title} className="detail-img" />
         <div className="specs">
           <p className="detail-specs">{album.specs.catalogNumber}</p>
@@ -34,6 +33,7 @@ const AlbumDetailPage = ({ albums, onAddToCart }) => {
         </div>
 
         <div className="detail-info">
+          <span className="album-genre">{album.genre}</span>
           <h1 className="detail-title">{album.title}</h1>
           <h2 className="detail-artist">{album.artist}</h2>
           <h3>Tracklist</h3>
