@@ -5,7 +5,7 @@ const AlbumDetailPage = ({ albums, onAddToCart }) => {
   const { id: albumId } = useParams();
   const [qty, setQty] = useState(1);
 
-  const albums = albums.find((album) => album.id === albumId);
+  const album = albums.find((album) => album.id === albumId);
 
   if (!album) {
     return (
@@ -24,14 +24,24 @@ const AlbumDetailPage = ({ albums, onAddToCart }) => {
       </nav>
 
       <div className="detail-grid">
+        <div className="album-genre">{album.genre}</div>
         <img src={album.image} alt={album.title} className="detail-img" />
-        <p className="detail-specs">{album.specs}</p>
+        <div className="specs">
+          <p className="detail-specs">{album.specs.catalogNumber}</p>
+          <p className="detail-specs">{album.specs.weight}</p>
+          <p className="detail-specs">{album.specs.speed}</p>
+          <p className="detail-specs">{album.specs.label}</p>
+        </div>
 
         <div className="detail-info">
-          <span className="album-genre">{album.genre}</span>
           <h1 className="detail-title">{album.title}</h1>
           <h2 className="detail-artist">{album.artist}</h2>
-          <h3 className="detail-tracklist">{album.tracklist}</h3>
+          <h3>Tracklist</h3>
+          <ol className="detail-tracklist">
+            {album.tracklist.map((track, index) => (
+              <li key={`${album.id}-${index}`}>{track}</li>
+            ))}
+          </ol>
           <p className="detail-price">{album.price.toFixed(2)}</p>
           <p className="detail-desc">{album.description}</p>
           <div className="stock-tag">

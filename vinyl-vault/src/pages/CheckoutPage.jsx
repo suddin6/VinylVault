@@ -29,7 +29,7 @@ const CheckoutPage = ({ cart, onClearCart }) => {
     onClearCart();
   };
 
-  if (!isSubmitted) {
+  if (isSubmitted) {
     return (
       <div className="checkout-success">
         <h2>Order Placed Successfully</h2>

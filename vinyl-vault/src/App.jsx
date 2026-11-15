@@ -8,7 +8,7 @@ import CheckoutPage from "./pages/CheckoutPage";
 import { ALBUMS } from "./data/albums";
 
 const App = () => {
-  const [cart, setCart] = userCart([]);
+  const [cart, setCart] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   const handleAddToCart = (album, quantity = 1) => {
