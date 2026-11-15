@@ -35,6 +35,10 @@ const CatalogPage = ({ albums, onAddToCart }) => {
           <AlbumCard key={album.id} album={album} onAddToCart={onAddToCart} />
         ))}
       </div>
+
+      <a href="https://www.flaticon.com/free-icons/vinyl" title="vinyl icons">
+        Vinyl icons created by Magnific - Flaticon
+      </a>
     </div>
   );
 };
