@@ -36,7 +36,11 @@ const CatalogPage = ({ albums, onAddToCart }) => {
         ))}
       </div>
 
-      <a href="https://www.flaticon.com/free-icons/vinyl" title="vinyl icons">
+      <a
+        href="https://www.flaticon.com/free-icons/vinyl"
+        title="vinyl icons"
+        className="attribute"
+      >
         Vinyl icons created by Magnific - Flaticon
       </a>
     </div>

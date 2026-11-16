@@ -34,11 +34,12 @@ const CheckoutPage = ({ cart, onClearCart }) => {
       <div className="checkout-success">
         <h2>Order Placed Successfully</h2>
         <p>
-          Thank you, {formData.fullName} for your order! A confirmation email
-          has been sent to {formData.email}. Check your spam folder if it was
-          not received and feel free to contact us for any questions, comments,
-          or concerns. Thank you again for shoppping with us and we hope to see
-          you again soon!
+          Thank you, {formData.fullName}, for your order! A confirmation email
+          has been sent to {formData.email} and your package will be sent to{" "}
+          {formData.shippingAddress} in 3-7 business days. Make sure to check
+          your inbox and spam folders for a summary of the order. Feel free to
+          contact us for any questions, comments, or concerns. Thank you again
+          for shopping with us and we hope to see you again soon!
         </p>
         <Link className="btn btn-primary" to="/">
           Return to Home Page
@@ -138,7 +139,7 @@ const CheckoutPage = ({ cart, onClearCart }) => {
               </li>
             ))}
           </ul>
-          <h3 />
+          <hr className="divider" />
           <div className="summary-row">
             <span>Subtotal:</span> <span>${subtotal.toFixed(2)}</span>
           </div>

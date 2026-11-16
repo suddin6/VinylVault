@@ -13,7 +13,7 @@ const AlbumCard = ({ album, onAddToCart }) => {
           loading="lazy"
         />
       </Link>
-      <div className="album-details">
+      <div className="album-body">
         <span className="album-genre">{album.genre}</span>
         <h2 className="album-title">
           <Link to={`/album/${album.id}`}>{album.title}</Link>

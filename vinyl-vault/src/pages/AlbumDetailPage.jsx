@@ -25,29 +25,32 @@ const AlbumDetailPage = ({ albums, onAddToCart }) => {
 
       <div className="detail-grid">
         <img src={album.image} alt={album.title} className="detail-img" />
-        <div className="specs">
-          <p className="detail-specs">{album.specs.catalogNumber}</p>
-          <p className="detail-specs">{album.specs.weight}</p>
-          <p className="detail-specs">{album.specs.speed}</p>
-          <p className="detail-specs">{album.specs.label}</p>
-        </div>
+        <h3>Tracklist</h3>
+        <ol className="detail-tracklist">
+          {album.tracklist.map((track, index) => (
+            <li key={`${album.id}-${index}`}>{track}</li>
+          ))}
+        </ol>
 
         <div className="detail-info">
-          <span className="album-genre">{album.genre}</span>
+          <span className="detail-genre">{album.genre}</span>
           <h1 className="detail-title">{album.title}</h1>
           <h2 className="detail-artist">{album.artist}</h2>
-          <h3>Tracklist</h3>
-          <ol className="detail-tracklist">
-            {album.tracklist.map((track, index) => (
-              <li key={`${album.id}-${index}`}>{track}</li>
-            ))}
-          </ol>
-          <p className="detail-price">{album.price.toFixed(2)}</p>
+          <div className="specs">
+            <h3>Specs:</h3>
+            <p className="detail-specs">
+              Catalog Number: {album.specs.catalogNumber}
+            </p>
+            <p className="detail-specs">Weight: {album.specs.weight}</p>
+            <p className="detail-specs">Speed: {album.specs.speed}</p>
+            <p className="detail-specs">Label: {album.specs.label}</p>
+          </div>
+
           <p className="detail-desc">{album.description}</p>
+
+          <p className="detail-price">Price: ${album.price.toFixed(2)}</p>
           <div className="stock-tag">
-            {album.stock > 0
-              ? `In Stock (${album.stock}) units available`
-              : "Out of Stock"}
+            {album.stock > 0 ? `In Stock: ${album.stock}` : "Out of Stock"}
           </div>
 
           <div className="detail-actions">
@@ -58,9 +61,10 @@ const AlbumDetailPage = ({ albums, onAddToCart }) => {
                 id="detail-qty"
                 min="1"
                 max={album.stock}
+                step="1"
                 value={qty}
                 onChange={(e) =>
-                  setQty(Math.mac(1, parseInt(e.target.value, 10) || 1))
+                  setQty(Math.max(1, parseInt(e.target.value, 10) || 1))
                 }
               />
             </div>
