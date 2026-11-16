@@ -66,7 +66,7 @@ const App = () => {
             }
           />
           <Route
-            path="/album/:id"
+            path="/album/:albumId"
             element={
               <AlbumDetailPage albums={ALBUMS} onAddToCart={handleAddToCart} />
             }

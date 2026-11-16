@@ -19,15 +19,16 @@ const CatalogPage = ({ albums, onAddToCart }) => {
       </header>
 
       <div className="filter-bar">
-        {genres.map((gen) => {
+        {genres.map((gen) => (
           <button
             key={gen}
+            type="button"
             className={`filter-pill ${selectedGenre === gen ? "active" : ""}`}
             onClick={() => setSelectedGenre(gen)}
           >
             {gen}
-          </button>;
-        })}
+          </button>
+        ))}
       </div>
 
       <div className="album-grid">

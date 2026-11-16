@@ -9,7 +9,7 @@ const AlbumCard = ({ album, onAddToCart }) => {
         <img
           className="album-image"
           src={album.image}
-          alt={album.name}
+          alt={album.title}
           loading="lazy"
         />
       </Link>

@@ -8,7 +8,9 @@ const CheckoutPage = ({ cart, onClearCart }) => {
     fullName: "",
     email: "",
     shippingAddress: "",
+    city: "",
     zipCode: "",
+    cardDetails: "",
   });
 
   const subtotal = cart.reduce(
@@ -16,7 +18,7 @@ const CheckoutPage = ({ cart, onClearCart }) => {
     0,
   );
 
-  const taxes = subtotal * 0.6;
+  const taxes = subtotal * 0.06;
   const total = subtotal + taxes;
 
   const handleChange = (e) => {
@@ -36,10 +38,11 @@ const CheckoutPage = ({ cart, onClearCart }) => {
         <p>
           Thank you, {formData.fullName}, for your order! A confirmation email
           has been sent to {formData.email} and your package will be sent to{" "}
-          {formData.shippingAddress} in 3-7 business days. Make sure to check
-          your inbox and spam folders for a summary of the order. Feel free to
-          contact us for any questions, comments, or concerns. Thank you again
-          for shopping with us and we hope to see you again soon!
+          {formData.shippingAddress}, {formData.city}, {formData.zipCode} in 3-7
+          business days. Make sure to check your inbox and spam folders for a
+          summary of the order. Feel free to contact us for any questions,
+          comments, or concerns. Thank you again for shopping with us and we
+          hope to see you again soon!
         </p>
         <Link className="btn btn-primary" to="/">
           Return to Home Page
@@ -109,6 +112,20 @@ const CheckoutPage = ({ cart, onClearCart }) => {
           </div>
 
           <div className="form-group">
+            <label htmlFor="city">
+              City<span className="required">*</span>:
+            </label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              required
+              value={formData.city}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="form-group">
             <label htmlFor="zipCode">
               Zip Code<span className="required">*</span>:
             </label>
@@ -118,6 +135,20 @@ const CheckoutPage = ({ cart, onClearCart }) => {
               id="zipCode"
               required
               value={formData.zipCode}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="cardDetails">
+              Card Details<span className="required">*</span>:
+            </label>
+            <input
+              type="number"
+              name="cardDetails"
+              id="cardDetails"
+              required
+              value={formData.cardDetails}
               onChange={handleChange}
             />
           </div>
@@ -133,7 +164,7 @@ const CheckoutPage = ({ cart, onClearCart }) => {
             {cart.map((item) => (
               <li key={item.id} className="summary-row">
                 <span>
-                  {item.name} &times; {item.quantity}
+                  {item.title} &times; {item.quantity}
                 </span>
                 <span>${(item.price * item.quantity).toFixed(2)}</span>
               </li>
